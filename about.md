@@ -27,7 +27,7 @@ My ability is not strong enough , so this blog cloned Leopard Pan's blog mould .
 
 <p>
 
-<h3> Contact information </h3>
+<h3> Contact </h3>
 
 <p>
 

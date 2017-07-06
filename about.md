@@ -7,11 +7,11 @@ I am a DoTAer , OIer and student .
 
 <p>
 
-I just graduated form Shandong Beizhen Middle School .
+I just graduated from Shandong Beizhen Middle School .
 
 <p>
 
-On Nov.20 2016 , I retire form the OI .
+On Nov.20 2016 , I retired from the OI .
 
 <p>
 
@@ -19,11 +19,11 @@ If you want to play DoTA2 with me , my steam ID is below. Welcome you .
 
 <p>
 
-‘Cause I want to impove my English , so my blog is writen in English . I will appriciate it if you can tell me the fault in my blog .
+I want to impove my English , so my blog is writen in English . I will appriciate it if you can tell me the fault in my blog .
 
 <p>
 
-My ability is not good enough , so this blog cloned Leopard Pan's blog mould .
+My ability is not strong enough , so this blog cloned Leopard Pan's blog mould .
 
 <p>
 

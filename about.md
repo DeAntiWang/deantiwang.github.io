@@ -51,7 +51,7 @@ Steam DoTA2 ID: 303861569
 
 <p>
 
-<a href="http://blog.zhangone.top/"><h4>张 赓鑫</h4></a>
+<a href="https://blog.zhangone.top" class="btn btn-raised btn-default">张赓鑫</a>
 
 <p>
 

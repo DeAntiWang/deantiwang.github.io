@@ -11,6 +11,10 @@ I just graduated from Shandong Beizhen Middle School .
 
 <p>
 
+And I have been admitted to Wuhan University of technology .
+
+<p>
+
 On Nov.20 2016 , I retired from the OI .
 
 <p>

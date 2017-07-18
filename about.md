@@ -51,7 +51,7 @@ Steam DoTA2 ID: 303861569
 
 <p>
 
-<a href="http://blog.zhangone.top/"><h4>张同学</h4></a>
+<a href="http://blog.zhangone.top/" class="btn btn-raised btn-default"><B>张同学</B></a>
 
 <p>
 

@@ -1,0 +1,43 @@
+---
+layout: page
+title:
+group: navigation
+---
+
+<head>
+    <title>Alert</title>
+    <script>
+        function r()
+        {
+            var username=document.getElementById("username");
+            var pass=document.getElementById("password");
+            if(pass.value=="")
+            {
+                alert("Please type in password");
+                return;
+            }
+            else  if(pass.value=="21990909")
+            {
+                window.location.href="https://darkkris.github.io/photo";
+            }
+            else
+            {
+                alert("Wrong Password");
+                return;
+            }
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <form name="frm" action="0.html" method="post">
+        <table  >
+            <tr align=center>
+                <td>Password:</td><td><input type="password" name="password"id="password"></td>
+            </tr>
+            <tr align=center><td colspan="2"><input type="button" value="Submit" onclick="r();"/>
+                <input type="reset" value="reset"/></td></tr>
+        </table>
+    </form>
+</body>
+</html>

@@ -3,9 +3,6 @@ layout: page
 title: About me
 ---
 
-<!-- Bootstrap -->
-<!--<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
-
 I am a DoTAer , OIer and student .
 
 <p>
@@ -58,7 +55,7 @@ Steam DoTA2 ID: 303861569
 
 <p>
 
-<a href="http://blog.zhangone.top/" ><B>张同学</B></a>
+<a href="http://blog.zhangone.top/" class="blogroll" >张同学</a>
 
 <p>
 

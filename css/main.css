@@ -32,6 +32,23 @@ blockquote:before, blockquote:after {
   content: none; 
 }
 
+blogroll {
+/*    display: block;*/
+    width: 100px;
+    margin: 5px auto;
+    height: 25px;
+    line-height: 25px;
+    padding: 10px;
+    background-color: #708090;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+
 q:before, q:after {
   content: '';
   content: none; }

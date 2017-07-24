@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "用PhotoShop制作双重曝光图片"
-date: 2017-07-25 
+date: 2017-07-24 
 description: "PhotoShop，双重曝光，学习笔记，教程"
 tag: 学习笔记教程
 ---

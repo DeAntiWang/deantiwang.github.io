@@ -3,7 +3,7 @@ layout: page
 title: About me
 ---
 
-<link rel="stylesheet" href="css/buttons.css">
+<link rel="stylesheet" href="../css/buttons.css">
 
 I am a DoTAer , OIer and student .
 

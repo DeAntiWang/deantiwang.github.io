@@ -3,6 +3,8 @@ layout: page
 title: About me
 ---
 
+<link rel="stylesheet" href="css/buttons.css">
+
 I am a DoTAer , OIer and student .
 
 <p>
@@ -59,16 +61,13 @@ Steam DoTA2 ID: 303861569
 
 <p>
 
-<a href="http://blog.zhangone.top/" class="blogroll" >张同学</a>
+<a href="http://blog.zhangone.top/" class="button button-raised button-pill button-inverse">张同学</a>
 
 <p>
   
-<a href="https://nikokvcs.github.io/" class="blogroll" >NikoKVCS</a>
+<a href="https://nikokvcs.github.io/" class="button button-raised button-pill button-inverse" >NikoKVCS</a>  
 
 <p>
-
-
-<!--<a target="_blank" href="https://www.talkingdata.com/"> TalkingData </a>-->
 
 {% include comments.html %}
 

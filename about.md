@@ -62,9 +62,6 @@ Steam DoTA2 ID: 303861569
 <p>
 
 <a href="http://blog.zhangone.top/" class="button button-raised button-pill button-inverse">张同学</a>
-
-<p>
-  
 <a href="https://nikokvcs.github.io/" class="button button-raised button-pill button-inverse" >NikoKVCS</a>  
 
 <p>

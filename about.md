@@ -18,6 +18,10 @@ And I have been admitted to Wuhan University of technology .
 On Nov.20 2016 , I retired from the OI .
 
 <p>
+  
+Now I have gotten the offer of Token and become a Server-side programmer .
+
+<p>
 
 If you want to play DoTA2 with me , my steam ID is below. Welcome you .
 
@@ -58,6 +62,8 @@ Steam DoTA2 ID: 303861569
 <a href="http://blog.zhangone.top/" class="blogroll" >张同学</a>
 
 <p>
+  
+<a href="https://nikokvcs.github.io/" class="blogroll" >NikoKVCS</a>
 
 <p>
 

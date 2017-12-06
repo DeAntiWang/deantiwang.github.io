@@ -172,8 +172,8 @@ em {
     font-style: italic; }
 
 blockquote {
-    padding-top: 10px;
-    padding-bottom: 1px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     padding-left: 10px;
     margin-left: 20px;
     
@@ -212,7 +212,7 @@ code {
 pre {
     margin-bottom: 1.3em;
     padding: 1em 2.5%;
-    background: #e8f2fb;
+    background: #cccccc;
     border: 1px solid #c9e1f6;
     border-radius: 3px;
     font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;

@@ -93,7 +93,7 @@ body {
 
 a {
     text-decoration: none;
-    color: #999999;
+    color: #666666;
     
 }
 p a {
@@ -139,11 +139,11 @@ h2 {
 h3 {
     font-size: 1.2em;
     text-indent: 4px;
-    border-radius: 4px;
+    border-radius: 2px;
     padding: 6px 15px;
     margin-bottom: 20px;
     margin-top: 5px;
-    background:#eeeeee;
+    background:#bbbbbb;
     /*0px right, 5px botton, 5px fuzzy*/
     box-shadow: 0px 5px 5px #dddddd;
     border-left: 6px solid #777777;
@@ -499,7 +499,7 @@ hr {
     overflow: auto; }
 .post hr {
     display: block;
-    width: 30%;
+    width: 70%;
     margin: 2em 0;
     border-top: 1px solid #DDDDDD; }
 

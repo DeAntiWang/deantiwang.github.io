@@ -8,7 +8,7 @@ tag: 产品介绍评测
 
 > 高中的时候曾经期盼过毕业后能够拥有一部Google Ara，不曾想我高二还没度过，Google Ara就已经宣布被搁置。要知道我从来不是什么“果粉”、“米粉”的，没有一款手机能让我如此期待以近乎于狂热。Google Ara究竟有哪些好呢？在这里博主跟大家分享一下
 
-![Google Ara模块化手机](http://static.cnbetacdn.com/thumb/article/2017/0113/ee63df9e46b09cd.jpg_600x600.jpg)
+![Google Ara模块化手机](https://gss2.bdstatic.com/9fo3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike80%2C5%2C5%2C80%2C26/sign=0132a9c83b12b31bd361c57be7715d1f/0df431adcbef76093989ac102cdda3cc7dd99eba.jpg)
 
 ### Google Ara
 

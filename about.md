@@ -45,7 +45,7 @@ QQ : 466403099
 
 <p>
 
-Zhihu : [王熠弘](https://www.zhihu.com/people/DarkKris)
+Zhihu : 王熠弘
 
 <p>
 
@@ -66,7 +66,8 @@ Steam DoTA2 ID: 303861569
 <p>
 
 <a href="http://blog.zhangone.top/" class="button button-raised button-pill button-inverse">张同学</a>
-<a href="https://nikokvcs.github.io/" class="button button-raised button-pill button-inverse" >NikoKVCS</a>  
+<a href="https://nikokvcs.github.io/" class="button button-raised button-pill button-inverse" >NikoKVCS</a>
+<a href="https://lsj575.github.io/" class="button button-raised button-pill button-inverse" >lsj575</a>  
 
 <p>
 

@@ -5,7 +5,7 @@ title: About me
 
 <link rel="stylesheet" href="../css/buttons.css">
 
-I am a DoTAer , OIer and student .
+I am a Tokener , ACMer and student .
 
 <p>
 
@@ -20,8 +20,16 @@ And I have been admitted to Wuhan University of technology .
 On Nov.20 2016 , I retired from the OI .
 
 <p>
+
+And now I'm fighting in ACM .
+
+<p>
   
 Now I have gotten the offer of Token and become a Server-side programmer .
+
+<p>
+
+I'm lreaning Python3 and TensoFlow in order to become a AI programmer.
 
 <p>
 
@@ -33,7 +41,7 @@ I want to impove my English , so my blog is writen in English . I will appriciat
 
 <p>
 
-My ability is not strong enough , so this blog cloned Leopard Pan's blog mould .
+My ability is not strong enough , so this blog cloned Leopard Pan's blog mould . Thanks a lot .
 
 <p>
 

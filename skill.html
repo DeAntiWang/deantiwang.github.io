@@ -6,26 +6,35 @@ group: navigation
 
 <head>
     <title>Skill</title>
+    <style>
+        #C {
+            /*利用css控制canvas元素的宽高，解决canvas本身的失真问题*/
+            width: 50px;
+        }
+        #PHP {
+            width: 30px;
+        }
+        #Py {
+            width: 25px;
+        }
+        #Ht {
+            width: 10px;
+        }
+    </style>
+    
+    <canvas id="#C" ></canvas>
+    <canvas id="#PHP" ></canvas>
+    <canvas id="#Py" ></canvas>
+    <canvas id="#Ht" ></canvas>
+    <script src="../js/circle-progress-bar.js"></script>
+    <script>
+        var myCanvas = document.querySelector('#my-canvas');
+        var c1 = new CircleProgressBar({
+                                       canvasDom: myCanvas
+                                       });
+    </script>
 </head>
 <body>
-    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <div class="progress" align="center">
-        <div class="progress-bar progress-bar-success" style="width: 35%">
-            <h7><strong>C/C++</strong></h7>
-            <span class="sr-only">35% Complete (success)</span>
-        </div>
-        <div class="progress-bar progress-bar-info" style="width: 20%">
-            <h7><strong>PHP</strong></h7>
-            <span class="sr-only">20% Complete</span>
-        </div>
-        <div class="progress-bar progress-bar-warning progress-bar-striped" style="width: 15%">
-            <h7><strong>Python<strong></h7>
-            <span class="sr-only">50% Complete (warning)</span>
-        </div>
-        <div class="progress-bar progress-bar-danger" style="width: 10%">
-            <h7><strong>Html</strong></h7>
-            <span class="sr-only">10% Complete (danger)</span>
-        </div>
-    </div>
+    
 </body>
 </html>

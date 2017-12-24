@@ -6,35 +6,25 @@ group: navigation
 
 <head>
     <title>Skill</title>
-    <style>
-        #C {
-            /*利用css控制canvas元素的宽高，解决canvas本身的失真问题*/
-            width: 50px;
-        }
-        #PHP {
-            width: 30px;
-        }
-        #Py {
-            width: 25px;
-        }
-        #Ht {
-            width: 10px;
-        }
-    </style>
     
-    <canvas id="#C" ></canvas>
-    <canvas id="#PHP" ></canvas>
-    <canvas id="#Py" ></canvas>
-    <canvas id="#Ht" ></canvas>
-    <script src="../js/circle-progress-bar.js"></script>
-    <script>
-        var myCanvas = document.querySelector('#my-canvas');
-        var c1 = new CircleProgressBar({
-                                       canvasDom: myCanvas
-                                       });
-    </script>
+    <script src="../js/progress.js"></script>
 </head>
 <body>
+    <style>
+        .progress {
+            width: 100%;
+            padding: 10px 0;
+        }
     
+        .progress-bar {
+            height: 4px;
+            background-color: #4874d9;
+            width: 0;
+        }
+    </style>
+    <div class="progress">
+        <div class="progress-bar j-bar"></div>
+    </div>
+    <span class="j-num"></span>
 </body>
 </html>

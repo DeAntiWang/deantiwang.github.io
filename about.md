@@ -69,6 +69,10 @@ Steam DoTA2 ID: 303861569
 
 <p>
 
+<h3> My Skills </h3>
+
+![](https://darkkris.github.io/images/about/skill.png)
+
 <h3> Blogroll </h3>
 
 <p>

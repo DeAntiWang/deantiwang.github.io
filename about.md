@@ -29,7 +29,7 @@ Now I have gotten the offer of Token and become a Server-side programmer .
 
 <p>
 
-I'm lreaning Python3 and TensoFlow in order to become a AI programmer.
+I'm learning Python3 and TensoFlow in order to become a AI programmer.
 
 <p>
 

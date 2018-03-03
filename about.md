@@ -69,7 +69,7 @@ Steam DoTA2 ID: 303861569
 
 <p>
 
-<?php $a=1; if($a==1)echo 'TEST SUCCESS'; ?>
+<?php echo 'TEST SUCCESS'; ?>
 
 <h3> My Skills </h3>
 

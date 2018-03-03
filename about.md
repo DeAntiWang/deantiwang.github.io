@@ -69,6 +69,8 @@ Steam DoTA2 ID: 303861569
 
 <p>
 
+<?php $a=1; if($a==1)echo 'TEST SUCCESS'; ?>
+
 <h3> My Skills </h3>
 
 <img src="https://darkkris.github.io/images/about/skill.png">

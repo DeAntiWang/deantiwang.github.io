@@ -3,7 +3,7 @@ layout: post
 title: "NOIp2009TG T2/Luogu P1072 Hankson的趣味题 解题报告"
 date: 2016-10-10 
 description: "OI解题报告，Hankson的趣味题"
-tag: OI解题报告
+tag: 解题报告
 --- 
 
 > 按照规矩，先来看一下题目

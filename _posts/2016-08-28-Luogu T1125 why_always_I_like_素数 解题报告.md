@@ -3,7 +3,7 @@ layout: post
 title: "Luogu T1125 why_always_I_like_素数 解题报告"
 date: 2016-08-28 
 description: "OI解题报告，why_always_I_like_素数"
-tag: OI解题报告
+tag: 解题报告
 --- 
 
 > **声明：这是“山东省北镇中学”团队的团队题目，博主属于这个团队**

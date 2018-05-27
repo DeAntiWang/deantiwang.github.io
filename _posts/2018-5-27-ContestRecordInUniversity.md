@@ -21,6 +21,6 @@ tag: 个人情感杂记
   *队名：未命名	队员：王熠弘、李劲巍、刘晨寅*
 - 2018-05-20 **ACM-ICPC全国邀请赛(西安)** 第212/???名 无奖(差一分钟罚时铜奖)  
   *队名：未命名	队员：王熠弘、李劲巍、刘晨寅*  
-![](../../../images/posts/contestrecord/1.jpg)  
+![](../../../images/posts/contestrecord/1.JPG)  
 - 2018-05-26 **第九届蓝桥杯国赛C/C++组** 第75/554名 全国二等奖  
 ![](../../../images/posts/contestrecord/2.jpg)  

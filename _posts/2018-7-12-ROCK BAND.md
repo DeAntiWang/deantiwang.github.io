@@ -3,7 +3,7 @@ layout: post
 title: "ROCK BAND"
 date: 2018-7-28 
 description: "ROCK，ONE OK ROCK，Fear and Loathing in Las Vegas"
-tag: 个人情感杂记
+tag: 情感杂记
 --- 
 
 # ONE OK ROCK

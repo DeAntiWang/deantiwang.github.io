@@ -32,11 +32,34 @@
   <link rel="stylesheet" href="https://darkkris.github.io/css/buttons.css">
       
   <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><!--LaTeX渲染-->
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <script>
+    window.onload = function() {
+        let nowurl = window.location.href;
+
+        var app = new Vue({
+            el: '#page_pv',
+            data: {
+                times: 0
+            }
+        });
+
+        axios({
+            method: 'post',
+            url:'http://bt.darkkris.xin/index.php/comment/Count/count',
+            data:{
+                url: nowurl
+            }
+        })
+            .then(function (response) {app.times = response.data;});
+    };
+  </script>
 
 <!-- 站点统计 -->
-  <script 
+<!--   <script 
   async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
-  </script>  
+  </script>   -->
 
 <!-- 百度统计 -->
   {% if site.baidu.id %}

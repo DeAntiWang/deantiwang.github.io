@@ -77,6 +77,7 @@ Steam DoTA2 ID: 303861569
 
 <p>
 
+<a href="http://whutlcy.cn/Blog/" class="button button-rounded"><strong>lcy</strong></a>
 <a href="http://blog.zhangone.top/" class="button button-rounded"><strong>张同学</strong></a>
 <a href="https://nikokvcs.github.io/" class="button button-rounded" ><strong>NikoKVCS</strong></a>
 <a href="https://lsj575.github.io/" class="button button-rounded" ><strong>lsj575</strong></a>

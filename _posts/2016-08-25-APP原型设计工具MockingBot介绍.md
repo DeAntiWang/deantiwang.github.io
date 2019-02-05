@@ -3,7 +3,7 @@ layout: post
 title: "APP原型设计工具MockingBot介绍"
 date: 2016-08-25 
 description: "墨刀MockingBot，APP设计原型设计利器"
-tag: 应用工具测评及教程
+tag: 产品介绍
 --- 
 
 > 这是博主的第一篇博客，若写的不好望大家指正

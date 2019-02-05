@@ -3,7 +3,7 @@ layout: post
 title: "用PhotoShop制作贴图效果"
 date: 2017-12-16 
 description: "PhotoShop，学习笔记，教程"
-tag: 学习笔记教程
+tag: 学习笔记
 ---
 
 ### 什么是贴图效果？

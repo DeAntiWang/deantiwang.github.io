@@ -3,7 +3,7 @@ layout: post
 title: "从幻想到破灭——Google Ara"
 date: 2017-12-04 
 description: "Google,手机,Ara"
-tag: 产品介绍评测
+tag: 产品介绍
 ---
 
 > 高中的时候曾经期盼过毕业后能够拥有一部Google Ara，不曾想我高二还没度过，Google Ara就已经宣布被搁置。要知道我从来不是什么“果粉”、“米粉”的，没有一款手机能让我如此期待以近乎于狂热。Google Ara究竟有哪些好呢？在这里博主跟大家分享一下

@@ -3,7 +3,7 @@ layout: post
 title: 'Honest to Myself'
 date: 2018-12-06 
 description: "情感杂记"
-tag: 情感杂记
+tag: 杂记
 --- 
 
 > 好久没写博客了,最近情绪复杂,觉得应该梳理一下自己的心情了.

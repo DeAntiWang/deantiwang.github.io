@@ -3,7 +3,7 @@ layout: post
 title: "Contests Records During University"
 date: 2018-5-27 
 description: "竞赛记录，ACM"
-tag: 情感杂记
+tag: 杂记
 --- 
 
 > 此篇文章用于记录我大学期间的竞赛经历(持续更新)

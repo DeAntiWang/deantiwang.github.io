@@ -274,6 +274,64 @@ $$ y = 2.982361 * x + 2.0705438 $$
 
 ## TensorFlow高级训练模型
 
+**tf.estimator**是TensorFlow提供的高级库，提供了很多常用的模型，可以简化机器学习中的很多训练过程，如：
+
+- 运行训练评估
+- 运行评估循环
+- 管理训练数据集
+
+### LinearRegressor
+
+tf.estimator中提供了线性回归的训练模型**tf.estimator.LinearRegressor**。使用LinearRegressor训练评估模型更方便：
+
+```python
+import tensorflow as tf
+import numpy as np
+
+# 训练数据
+x_train = np.array([1., 2., 3., 6., 8.])
+y_train = np.array([4.8, 8.5, 10.4, 21.0, 25.3])
+
+# 评估数据
+x_eval = np.array([2., 5., 7., 9.])
+y_eval = np.array([7.6, 17.2, 23.6, 28.8])
+
+# 特征向量表
+feature_columns = [tf.feature_column.numeric_column("x", shape=[1])]
+
+# 创建LinearRegressor训练器并传入特征向量表
+estimator = tf.estimator.LinearRegressor(feature_columns=feature_columns)
+
+# 输入模型
+train_input_fn = tf.estimator.inputs.numpy_input_fn(
+    {"x": x_train}, y_train, batch_size=2, num_epochs=None, shuffle=True
+)
+train_input_fn_2 = tf.estimator.inputs.numpy_input_fn(
+    {"x": x_train}, y_train, batch_size=2, num_epochs=1000, shuffle=False
+)
+eval_input_fn = tf.estimator.inputs.numpy_input_fn(
+    {"x": x_eval}, y_eval, batch_size=2, num_epochs=1000, shuffle=False
+)
+
+# 训练1000次
+estimator.train(input_fn=train_input_fn, steps=1000)
+
+# 使用两组数据分别评估模型
+train_metrics = estimator.evaluate(input_fn=train_input_fn_2)
+eval_metrics = estimator.evaluate(input_fn=eval_input_fn)
+print("train metrics: %r" % train_metrics)
+print("eval metrics: %s" % eval_metrics)
+```
+
+运行输出:
+
+```python
+train metrics: {'average_loss': 0.4833329, 'label/mean': 13.999993, 'loss': 0.9666658, 'prediction/mean': 14.124545, 'global_step': 1000}
+eval metrics: {'average_loss': 0.287943, 'label/mean': 19.299805, 'loss': 0.575886, 'prediction/mean': 19.205923, 'global_step': 1000}
+```
+
+可见评估数据的损失量比训练数据要小，说明得到的模型的泛化性能很好。
+
 ## 自定义Estimator模型
 
 # TensorBoard

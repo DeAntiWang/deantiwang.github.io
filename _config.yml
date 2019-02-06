@@ -25,14 +25,14 @@ social:
 
 # 百度统计 
 # 使用博客模板请去掉或者更换 id 
-baidu:
-    id:94bd6d5efd92345bf72bd9c19bd16f49
+# baidu:
+#     id:94bd6d5efd92345bf72bd9c19bd16f49
 
 # Google Analytics
 # 使用博客模板请去掉或者更换 id
-ga:
-    id: UA-102043025-1   
-    host: auto  
+# ga:
+#     id: UA-102043025-1   
+#     host: auto  
 
 
 # 《----------------- 上面的信息修改成你自己的 ---------------------------》

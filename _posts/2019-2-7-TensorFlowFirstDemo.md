@@ -334,6 +334,135 @@ eval metrics: {'average_loss': 0.287943, 'label/mean': 19.299805, 'loss': 0.5758
 
 ## 自定义Estimator模型
 
+我们可以通过实现**tf.estimator.Estimator**的子类来构建我们自己的训练模型。例如我们可以给Estimator基类提供一个model_fn的实现，来定义我们自己的训练模型、评估方法和损失模型。
+
+```python
+import tensorflow as tf
+import numpy as np
+
+
+def model_fn(features, labels, mode):
+    # 线性模型
+    W = tf.get_variable("W", [1], dtype=tf.float64)
+    b = tf.get_variable("b", [1], dtype=tf.float64)
+    y = W * features['x'] + b
+    # 损失模型
+    loss = tf.reduce_sum(tf.square(y - labels))
+    # 训练模型
+    global_step = tf.train.get_global_step()
+    optimizer = tf.train.GradientDescentOptimizer(0.001)
+    train = tf.group(optimizer.minimize(loss),
+                     tf.assign_add(global_step, 1))
+    return tf.estimator.EstimatorSpec(
+        mode=mode,
+        predictions=y,
+        loss=loss,
+        train_op=train
+    )
+
+
+# 训练数据
+x_train = np.array([1., 2., 3., 6., 8.])
+y_train = np.array([4.8, 8.5, 10.4, 21.0, 25.3])
+# 评估数据
+x_eval = np.array([2., 5., 7., 9.])
+y_eval = np.array([7.6, 17.2, 23.6, 28.8])
+
+estimator = tf.estimator.Estimator(model_fn=model_fn)
+train_input_fn = tf.estimator.inputs.numpy_input_fn(
+    {"x": x_train}, y_train, batch_size=2, num_epochs=None, shuffle=True
+)
+train_input_fn_2 = tf.estimator.inputs.numpy_input_fn(
+    {"x": x_train}, y_train, batch_size=2, num_epochs=1000, shuffle=False
+)
+eval_input_fn = tf.estimator.inputs.numpy_input_fn(
+    {"x": x_eval}, y_eval, batch_size=2, num_epochs=1000, shuffle=False
+)
+
+estimator.train(input_fn=train_input_fn, steps=1000)
+
+train_metrics = estimator.evaluate(input_fn=train_input_fn_2)
+eval_metrics = estimator.evaluate(input_fn=eval_input_fn)
+print("train metrics: %r" % train_metrics)
+print("eval metrics: %s" % eval_metrics)
+```
+
+运行结果:
+
+```python
+train metrics: {'loss': 0.94158113, 'global_step': 1000}
+eval metrics: {'loss': 0.25634465, 'global_step': 1000}
+```
+
 # TensorBoard
+
+Google为TensorFlow开发了一款可视化工具：TensorBoard，可以直观的看到数据流图，理解TensorFlow的训练过程。
+
+```python
+import tensorflow as tf
+
+W = tf.Variable([0], dtype=tf.float32, name='W')
+b = tf.Variable([0], dtype=tf.float32, name="b")
+
+x = tf.placeholder(tf.float32, name='x')
+y = tf.placeholder(tf.float32, name='y')
+
+linear_model = W * x + b
+
+with tf.name_scope("loss-model"):
+    loss = tf.reduce_sum(tf.square(linear_model - y))
+    tf.summary.scalar("loss", loss)
+
+optimizer = tf.train.GradientDescentOptimizer(0.001)
+
+train = optimizer.minimize(loss)
+
+# 训练数据
+x_train = [1, 2, 3, 6, 8]
+y_train = [4.8, 8.5, 10.4, 21.0, 25.3]
+
+sess = tf.Session()
+init = tf.global_variables_initializer()
+sess.run(init)
+
+# 收集所有的操作数据
+merged = tf.summary.merge_all()
+# 模型运行产生的所有数据保存到 /tmp/tensorflow 文件夹供TensorBoard使用
+writer = tf.summary.FileWriter('/tmp/tensorflow', sess.graph)
+
+for i in range(10000):
+    # 训练时传入merge
+    summary, _ = sess.run([merged, train], {x: x_train, y: y_train})
+    # 收集每次训练产生的数据
+    writer.add_summary(summary, i)
+
+curr_W, curr_b, curr_loss = sess.run(
+    [W, b, loss], {x: x_train, y: y_train}
+)
+
+print("After train W: %s  b: %s  loss: %s" % (curr_W, curr_b, curr_loss))
+```
+
+在bash/shell中输入命令调出TensorBoard：
+
+```bash
+$ tensorboard --logdir /tmp/tensorflow
+```
+
+会看到bash弹出信息：
+
+```bash
+TensorBoard 1.12.2 at http://localhost:6006 (Press CTRL+C to quit)
+```
+
+在浏览器地址栏输入localhost:6006即可打开TensorBoard：
+
+![TensorBoard](../../../images/posts/tensorflow/2.png)
+
+在GRAPHS选项卡中可以看到数据流图：
+
+![线性回归数据流图](../../../images/posts/tensorflow/1.png)
+
+至此，TensorFlow入门已经结束，更多内容请参考TensorFlow官方文档/中文文档。
 
 > 感谢阅读

@@ -9,7 +9,7 @@ layout: default
       <img src="/images/calendar.png" width="20px"/> 
       <time datetime="{{page.date | date: date_to_xmlschema}}" itemprop="datePublished" class="post-meta__date date">{{page.date | date: "%F"}}</time>  
          
-      <span id="page_pv"> | Have been read：{{times}} </span>times</span>
+      <span id="page_pv"> | Have been read：<span id='times'></span> times</span>
     </p>
     </div>
   </header>

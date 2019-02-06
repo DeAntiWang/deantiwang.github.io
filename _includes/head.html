@@ -33,17 +33,17 @@
       
   <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><!--LaTeX渲染-->
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/vue"></script> -->
   <script>
     window.onload = function() {
         let nowurl = window.location.href;
 
-        var app = new Vue({
-            el: '#page_pv',
-            data: {
-                times: 0
-            }
-        });
+        // var app = new Vue({
+        //     el: '#page_pv',
+        //     data: {
+        //         times: 0
+        //     }
+        // });
 
         axios({
             method: 'post',
@@ -52,7 +52,10 @@
                 url: nowurl
             }
         })
-            .then(function (response) {app.times = response.data;});
+            .then(function (response) {
+              // app.times = response.data;
+              document.getElementById('times').innerHTML = response.data;
+            });
     };
   </script>
 

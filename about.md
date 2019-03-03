@@ -82,7 +82,7 @@ Steam DoTA2 ID: 303861569
 <a href="https://nikokvcs.github.io/" class="button button-rounded" ><strong>NikoKVCS</strong></a>
 <a href="https://lsj575.github.io/" class="button button-rounded" ><strong>lsj575</strong></a>
 <a href="http://untitled.pw/" class="button button-rounded" ><strong>路人甲的世界</strong></a>
-<a href="http://liuyousama.github.io" class="button button-rounded"><strong>六游</strong></a>
+<a href="https://liuyousama.github.io" class="button button-rounded"><strong>六游</strong></a>
 
 <p>
 

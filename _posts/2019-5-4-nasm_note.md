@@ -34,6 +34,8 @@ $ alias nasm='/usr/local/bin/nasm'	# 设置指令
 
 ## 第一个程序HelloWorld
 
+源代码（main.asm）：
+
 ```x86asm
 SECTION .data
 
@@ -48,15 +50,34 @@ kernel:
 	ret
 
 _main:
-	mov rax, 0x2000004
-	mov rdi, 1
-	mov rsi, msg
-	mov rdx, len
+	mov rax, 0x2000004	;0x2000004 是 syscall 调用 write 的调用号
+	mov rdi, 1	;表示控制台输出
+	mov rsi, msg	;syscall 去 rsi 寄存器获取字符
+	mov rdx, len	;字符串长度
 	call kernel
 
-	mov rax, 0x2000001
+	mov rax, 0x2000001	;0x2000001 表示退出 syscall
 	mov rdi, 0
 	call kernel
+```
+
+编译：
+
+```bash
+$ nasm -f macho64 -o main.o main.asm
+```
+
+链接：
+
+```bash
+$ ld -e _main -macosx_version_min 10.8 -arch x86_64 main.o -lSystem -o main
+```
+
+执行:
+
+```bash
+$ ./main
+hello world!
 ```
 
 > 未完待续

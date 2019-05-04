@@ -66,6 +66,8 @@ r15  | 被调用方保留的寄存器 | √
 
 ## 第一个程序HelloWorld
 
+### 执行过程
+
 源代码（main.asm）：
 
 ```x86asm
@@ -110,6 +112,55 @@ $ ld -e _main -macosx_version_min 10.8 -arch x86_64 main.o -lSystem -o main
 ```bash
 $ ./main
 hello world!
+```
+
+### 程序解读：
+
+选举一段代码作为解释：
+
+```x86asm
+kernel:
+	syscall
+	ret
+
+_main:
+	mov rax, 0x2000004
+	mov rdi, 1
+	mov rsi, msg
+	mov rdx, len
+	call kernel
+```
+
+在本段代码中，0x2000004代表的是系统调用(syscall) - write。  
+执行过程如下：
+
+1. 给rax一个值0x2000004，代表本次指令调用要调用的是write指令
+2. 给rdi一个值(1)，代表从stdout输出，是系统指令调用的第一个参数
+3. 给rsi一个值(字符串)，代表要输出的字符内容，是系统指令调用的第二个参数
+4. 给rdx一个值(字符串长度)，是系统指令调用的第三个参数
+5. syscall，将上述步骤转化为一个完整的指令并执行
+6. ret，执行结束
+
+以此类推
+
+```x86asm
+mov rax, 0x2000001	;0x2000001 表示退出 syscall
+mov rdi, 0
+call kernel
+```
+
+这段代码的含义为：
+
+1. 给rax一个值0x2000001，表示退出syscall
+2. 给rdi一个值0，表示退出指令的返回值为0，是系统指令调用的第一个参数
+3. syscall，将上述步骤转化为一个完整的指令并执行
+4. ret 执行结束
+
+于是main.asm这一段程序就可以转化为如下伪代码：
+
+```cpp
+write(stdout,"hello world!",len("hello world"));
+return 0;
 ```
 
 > 未完待续

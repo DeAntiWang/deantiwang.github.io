@@ -8,14 +8,14 @@ tag: 学习笔记
 
 # 汇编学习笔记
 
-> 系统环境：macOS High Sierra 10.13.4
-> CPU：Intel
-> 使用工具：NASM version 2.14.02 compiled on Dec 27 2018
+> 系统环境：macOS High Sierra 10.13.4  
+> CPU：Intel  
+> 使用工具：NASM version 2.14.02 compiled on Dec 27 2018  
 
 ## 环境配置
 
 ```bash
-$ brew install nasm					# 安装nasm
+$ brew install nasm			# 安装nasm
 $ alias nasm='/usr/local/bin/nasm'	# 设置指令
 ```
 

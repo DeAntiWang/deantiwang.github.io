@@ -51,9 +51,9 @@ kernel:
 
 _main:
 	mov rax, 0x2000004	;0x2000004 是 syscall 调用 write 的调用号
-	mov rdi, 1	;表示控制台输出
-	mov rsi, msg	;syscall 去 rsi 寄存器获取字符
-	mov rdx, len	;字符串长度
+	mov rdi, 1		;表示控制台输出
+	mov rsi, msg		;syscall 去 rsi 寄存器获取字符
+	mov rdx, len		;字符串长度
 	call kernel
 
 	mov rax, 0x2000001	;0x2000001 表示退出 syscall

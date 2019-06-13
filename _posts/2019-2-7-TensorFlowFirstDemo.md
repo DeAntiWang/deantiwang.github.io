@@ -28,7 +28,7 @@ Tensor 即 张量，其建立在标量与矢量之上，是矢量的推广，矢
 [[[1., 2., 3.]], [[7., 8., 9.]]]	# 3阶张量，三维数组，shape=[2, 1, 3]
 ```
 
-TensorFlow中用Tensor类的实例来表示张量，其有**dtype和shape**两个属性  
+TensorFlow中用Tensor类的实例来表示张量，其有**dtype和shape**两个属性,解释如下  
 
 - dtype：数据类型，值例如tf.float32，tf.int64, tf.string
 - shape：多维数组中每个维度的数组中元素的个数

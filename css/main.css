@@ -16,12 +16,17 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
     display: block; }
 
+* {
+    outline: none;
+}
+
 body {
     line-height: 1;
 }
 
 ol, ul {
-    list-style: none; }
+    list-style: none;
+}
 
 blockquote, q {
     quotes: none;
@@ -829,35 +834,12 @@ i {
 .post-list li {
     margin: 0 0 2.2em 0;
     float: left;
+    border-radius: .8em;
+    -webkit-backdrop-filter: blur(20px);
     
-    -moz-box-shadow:4px 4px 4px #efefef,
-    -4px -4px 4px #efefef,
-    4px -4px 4px #efefef,
-    -4px 4px 4px #efefef;
-    -webkit-box-shadow:4px 4px 4px #efefef,
-    -4px -4px 4px #efefef,
-    4px -4px 4px #efefef,
-    -4px 4px 4px #efefef;
-    box-shadow:4px 4px 4px #efefef,
-    -4px -4px 4px #efefef,
-    4px -4px 4px #efefef,
-    -4px 4px 4px #efefef;
-}
-.post-list li:hover {
-    /*transform:scale(1.01,1.01); */
-    -moz-box-shadow:4px 4px 4px #c9e1f6,
-    -4px -4px 4px #c9e1f6,
-    4px -4px 4px #c9e1f6,
-    -4px 4px 4px #c9e1f6;
-    -webkit-box-shadow:4px 4px 4px #c9e1f6,
-    -4px -4px 4px #c9e1f6,
-    4px -4px 4px #c9e1f6,
-    -4px 4px 4px #c9e1f6;
-    box-shadow:4px 4px 4px #c9e1f6,
-    -4px -4px 4px #c9e1f6,
-    4px -4px 4px #c9e1f6,
-    -4px 4px 4px #c9e1f6;
-    /*background-color: #F5FFFA;*/
+    -moz-box-shadow: drop-shadow(4px 4px 4px #efefef);
+    -webkit-box-shadow: drop-shadow(4px 4px 4px #efefef);
+    box-shadow: drop-shadow(4px 4px 4px #efefef);
 }
 
 .post-list li:last-child hr {

@@ -1,16 +1,20 @@
 # Basic
 markdown: kramdown
-title: Dark`Kris
+title: DeAnti-
 subtitle: Private blog
 description: I'm spark , hope you fire
 # 头像里面的标题
 avatarTitle: 王熠弘
 # 头像里面的描述
-avatarDesc: Reign in Hell
+avatarDesc: Same on the other side
 url: "http://darkkris.github.io"
 
+# kramdown
+kramdown:
+    input: GFM
+
 # Comment
-comment:
+# comment:
     # disqus: DarkKris
     # duoshuo: DarkKris
     # cloudTie: DarkKris
